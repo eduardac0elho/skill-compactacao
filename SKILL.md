@@ -18,8 +18,8 @@ Quando o usuário escrever **"compactar"** (ou variações como "compacta isso",
 1. Varrer toda a conversa **atual** do início ao fim
 2. Extrair os elementos de maior valor informacional (ver prioridade abaixo)
 3. Condensar em **no máximo 10 bullets**, ordenados por relevância
-4. Usar a ferramenta **Write** para criar o arquivo `contexto-chat.md` no diretório de trabalho atual (`./contexto-chat.md`)
-5. Exibir o conteúdo do arquivo na resposta
+4. **OBRIGATÓRIO — chame a ferramenta `Write` agora:** invoque-a com `file_path` = `./contexto-chat.md` e o conteúdo formatado conforme a seção abaixo. Esta chamada de ferramenta é obrigatória e deve acontecer antes de qualquer texto de resposta.
+5. Somente após a ferramenta `Write` confirmar a criação do arquivo, exiba o conteúdo na resposta
 
 ## Prioridade dos bullets
 
