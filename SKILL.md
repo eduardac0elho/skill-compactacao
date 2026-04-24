@@ -9,12 +9,16 @@ description: Use quando o usuário digitar "compactar" para resumir toda a conve
 
 Quando o usuário escrever **"compactar"** (ou variações como "compacta isso", "compacta o chat").
 
+## Escopo de contexto
+
+**Use APENAS a conversa atual.** Não consulte memórias de sessões anteriores, não use o sistema de memória, não traga informações de outros chats. Se não houver conversa suficiente, informe o usuário.
+
 ## Comportamento
 
-1. Varrer toda a conversa do início ao fim
+1. Varrer toda a conversa **atual** do início ao fim
 2. Extrair os elementos de maior valor informacional (ver prioridade abaixo)
 3. Condensar em **no máximo 10 bullets**, ordenados por relevância
-4. Escrever o arquivo `contexto-chat.md` no diretório de trabalho atual
+4. Usar a ferramenta **Write** para criar o arquivo `contexto-chat.md` no diretório de trabalho atual (`./contexto-chat.md`)
 5. Exibir o conteúdo do arquivo na resposta
 
 ## Prioridade dos bullets
@@ -77,3 +81,5 @@ Para continuar em um novo chat, cole este bloco no início:
 - Não repita informação já contida em outro bullet
 - Não ultrapasse 10 bullets — se necessário, mescle bullets menos críticos
 - Não inclua conversas de ida-e-volta — apenas fatos, decisões e estado
+- Não exiba o conteúdo na resposta sem antes usar a ferramenta **Write** — o arquivo deve ser criado no sistema de arquivos
+- Não inclua informações de sessões anteriores ou do sistema de memória — apenas o chat atual conta
